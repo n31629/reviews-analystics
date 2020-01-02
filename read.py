@@ -13,3 +13,10 @@ sum_len = 0
 for d in data:
 	sum_len += len(d) 
 print("平均每筆留言有", sum_len / len(data), "個字數")
+
+new = []
+for d in data:
+    if len(d) <= 150:
+        new.append(d)
+print('共有', len(new), '筆留言少於150個字')
+print(new[2])
